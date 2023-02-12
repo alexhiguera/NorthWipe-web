@@ -1,0 +1,91 @@
+:root {
+    --smal: 1.6rem;
+    --medium: 2rem;
+    ---large: 3rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+HTML {
+    font-size: 62.5%;
+    background-color: cornsilk;
+} 
+
+
+@media (min-width: 600px) {
+
+
+                            /*Heder*/                       
+
+                            .cabecera {
+        background-color: #1b3039;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8.5rem;
+        padding: 5rem 10rem;
+    }
+
+
+    /*Logo*/
+    .cabecera .logo img {
+        height: 7rem;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .cabecera .logo:hover {
+        transition: all 0.5s;
+        transform: scale(1.3);
+        /* hover genera transdormación 1.3 en 0.3s */
+    }
+
+
+    /*navbar*/
+    .cabecera__nav__items {
+        font-size: var(--medium);
+        display: inline-block;
+        padding: 0 2rem;
+        list-style: none;
+        
+    }
+
+    .cabecera__nav__items:hover {
+        transition: all 0.3s;
+        transform: scale(1.2);
+    }
+
+
+    .cabecera__nav__items a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .cabecera__nav__items a:hover{
+        color: chocolate;
+    }
+
+    /*Boton perfil*/
+    .boton__perfil {
+        font-size: 2rem;
+        color: #1b3039;
+        padding: 0.9rem 2.5rem;
+        background: #eceff1;
+        border: none;
+        border-radius: 5rem;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .boton__perfil:hover {
+        background-color: #eceff1;
+        color: chocolate;
+        transform: scale(1.2);
+    }
+
+}
